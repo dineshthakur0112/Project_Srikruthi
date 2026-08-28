@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Little World ⭐</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Sample.css">
+</head>
+
+<body>
+
+    <!-- ==================================================
+         OPENING SCREEN
+         This appears first when the website is opened.
+         ================================================== -->
+
+    <section id="welcomeScreen" class="welcome-screen">
+
+        <div class="welcome-card">
+
+            <div class="baby-icon">👧💖</div>
+
+            <h1>Welcome To My Little World ⭐</h1>
+
+            <p class="welcome-text">
+                Before you enter my world...
+                I want to know something about you ❤️
+            </p>
+
+            <h2>What am I to you? ❤️</h2>
+
+            <select id="relation">
+
+                <option value="">
+                    -- Select Relationship --
+                </option>
+
+                <option value="mother">
+                    Mother
+                </option>
+
+                <option value="father">
+                    Father
+                </option>
+
+                <option value="grandmother">
+                    Ammamma
+                </option>
+
+                <option value="grandfather">
+                    Nanamma
+                </option>
+
+                <option value="Babai">
+                    Uncle
+                </option>
+
+                <option value="Mama">
+                    Aunt
+                </option>
+
+            </select>
+
+            <br>
+
+            <button
+                class="continue-btn"
+                onclick="showMessage()">
+
+                Continue ❤️
+
+            </button>
+
+            <!-- Personalized message -->
+
+            <div
+                id="message"
+                class="wish-message">
+            </div>
+
+            <!-- Hidden until relationship is selected -->
+
+            <button
+                id="homeButton"
+                class="home-btn"
+                onclick="enterHome()">
+
+                ⭐ Enter My World ⭐
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         FLOATING DECORATIONS
+         ================================================== -->
+
+    <div class="heart">💖</div>
+    <div class="heart">⭐</div>
+    <div class="heart">💙</div>
+    <div class="heart">✨</div>
+    <div class="heart">😍</div>
+
+
+    <!-- ==================================================
+         MAIN HOMEPAGE
+         Your original design starts here.
+         ================================================== -->
+
+    <div class="container">
+
+
+        <!-- ==================================================
+             HEADER
+             ================================================== -->
+
+        <header>
+
+            <h1>
+                𝓦𝓮𝓵𝓬𝓸𝓶𝓮 𝓣𝓸 𝓜𝔂 𝓦𝓸𝓻𝓵𝓭.
+            </h1>
+
+        </header>
+
+
+        <!-- ==================================================
+             FAMILY MESSAGE
+             ================================================== -->
+
+        <section class="message">
+
+            <h1>
+                💌 Something I Want to Tell My Family...
+            </h1>
+
+            <h3>
+                Hi, my lovely family! 👶❤️
+            </h3>
+
+            <p>
+                1️⃣ I may not be able to speak yet,
+                but my little eyes, tiny smiles, and cute
+                expressions have so much to say. 🥰
+            </p>
+
+            <p>
+                2️⃣ I may be tiny, but I have already
+                filled your hearts with so much love. ❤️
+            </p>
+
+            <p>
+                3️⃣ I may be only 25 days old, but I already
+                know one thing...
+                I am surrounded by the most wonderful
+                family in the world! 💕⭐
+            </p>
+
+        </section>
+
+
+        <!-- ==================================================
+             FAMILY PHOTOS
+             ================================================== -->
+
+        <div id="jija">
+
+            <img
+                src="/jijaa&jiji.jpeg"
+                alt="Mummy and Daddy">
+
+            <img
+                src="/jijaaa.png"
+                alt="Family">
+
+        </div>
+
+
+        <!-- ==================================================
+             LITTLE SUNSHINE MESSAGE
+             ================================================== -->
+
+        <section class="message">
+
+            <h2>
+                𝓘'𝓶 𝓐 𝓛𝓲𝓽𝓽𝓵𝓮 𝓢𝓾𝓷𝓼𝓱𝓲𝓷𝓮 ☀️
+            </h2>
+
+
+            <h2 class="family-highlight">
+
+                👑 𝖭𝖺𝗇𝖺𝗆𝗆𝖺'𝗌 𝖥𝗂𝗋𝗌𝗍 𝖦𝗋𝖺𝗇𝖽𝖽𝖺𝗎𝗀𝗁𝗍𝖾𝗋
+                — 𝖱𝗈𝗒𝖺𝗅𝗍𝗒 𝖧𝖺𝗌 𝖠𝗋𝗋𝗂𝗏𝖾𝖽!
+
+            </h2>
+
+
+            <h2>
+
+                👑 𝖠𝗆𝗆𝖺𝗆𝗆𝖺'𝗌 𝖥𝗂𝗋𝗌𝗍 𝖦𝗋𝖺𝗇𝖽𝖽𝖺𝗎𝗀𝗁𝗍𝖾𝗋
+                — 𝖧𝖾𝗋 𝖫𝗂𝗍𝗍𝗅𝖾 𝖯𝗋𝗂𝗇𝖼𝖾𝗌𝗌!
+
+            </h2>
+
+
+            <h2>
+
+                😎 𝖥𝗂𝗋𝗌𝗍 𝖲𝗈𝗇'𝗌 𝖥𝗂𝗋𝗌𝗍 𝖣𝖺𝗎𝗀𝗁𝗍𝖾𝗋
+                — 𝖣𝖺𝖽'𝗌 𝖫𝗂𝗍𝗍𝗅𝖾 𝖲𝗎𝗉𝖾𝗋𝗌𝗍𝖺𝗋!
+
+            </h2>
+
+
+            <h2>
+
+                😎 𝖥𝗂𝗋𝗌𝗍 𝖣𝖺𝗎𝗀𝗁𝗍𝖾𝗋'𝗌 𝖥𝗂𝗋𝗌𝗍 𝖣𝖺𝗎𝗀𝗁𝗍𝖾𝗋
+                — 𝖠 𝖡𝗋𝖺𝗇𝖽-𝖭𝖾𝗐 𝖥𝖺𝗆𝗂𝗅𝗒 𝖲𝗍𝖺𝗋!
+
+            </h2>
+
+
+            <h3>
+                💕 Small in Size, Huge in Love
+            </h3>
+
+            <h3>
+                ⭐ 25 Days Old & Already Running the Family!
+            </h3>
+
+
+            <p>
+
+                I'm bringing so much happiness and laughter
+                wherever I go.
+
+                Keep smiling, keep growing, and keep shining
+                like the little star I am! ⭐💖
+
+            </p>
+
+        </section>
+
+
+        <!-- ==================================================
+             PHOTO GALLERY
+             ================================================== -->
+
+        <h2 class="gallery-title">
+            📸 Beautiful Memories
+        </h2>
+
+
+        <div class="gallery">
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/jiji&jijaa.jpeg"
+                    alt="First family picture">
+
+                <p>
+                    It is my First Pic 😊
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/jijaa&sri1.jpeg"
+                    alt="My Hero">
+
+                <p>
+                    My Hero... ❤️
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/jiji&jijaa1.jpeg"
+                    alt="Mummy and Daddy">
+
+                <p>
+                    Mummy ❤️ Daddy
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/background.jpeg"
+                    alt="Welcome">
+
+                <p>
+                    Welcome ❤️
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/w.jpeg"
+                    alt="Happy moment">
+
+                <p>
+                    Happy Moments ❤️
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/itsme.jpeg"
+                    alt="Growing baby">
+
+                <p>
+                    I'm Not Short, I'm Just Growing ❤️
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/pencil.jpeg"
+                    alt="Thinking baby">
+
+                <p>
+                    Guess What I'm Thinking? ❤️
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/smile.jpeg"
+                    alt="Baby smile">
+
+                <p>
+                    Smile... ❤️
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/2.jpeg"
+                    alt="Baby with teddy">
+
+                <p>
+                    How Are My Cute Teddies? ❤️
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/jiji&jijaa.jpeg"
+                    alt="Family memory">
+
+                <p>
+                    ❤️❤️
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/kallu.jpeg"
+                    alt="Family memory">
+
+                <p>
+                    ❤️
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/me with teddys.jpeg"
+                    alt="Baby with teddies">
+
+                <p>
+                    ❤️❤️
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/bademma.jpeg"
+                    alt="Nani and Nana">
+
+                <p>
+                    Nani ❤️ Nana
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/bademma2.jpeg"
+                    alt="Family memory">
+
+                <p>
+                    Happy Moments ❤️
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/bademma1.jpeg"
+                    alt="Family memory">
+
+                <p>
+                    Happy Moments ❤️
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/bayya&bhabhi.jpeg"
+                    alt="Mama and Mayi">
+
+                <p>
+                    Mama ❤️ Mayi
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/bayya bhabhi.jpeg"
+                    alt="Family memory">
+
+                <p>
+                    ❤️
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/bhayya.jpeg"
+                    alt="Family memory">
+
+                <p>
+                    ❤️❤️
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/jiji&bhabhi.jpeg"
+                    alt="Family memory">
+
+                <p>
+                    Happy Moments ❤️
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/teddy.jpeg"
+                    alt="Teddy">
+
+                <p>
+                    Happy Moments ❤️
+                </p>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="/m.jpeg"
+                    alt="Baby memory">
+
+                <p>
+                    Happy Moments ❤️
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- ==================================================
+             FOOTER
+             ================================================== -->
+
+        <footer>
+
+            Made with ❤️ for our little superstar ⭐
+
+        </footer>
+
+
+    </div>
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+         ================================================== -->
+
+    <script src="Sample.js"></script>
+
+</body>
+
+</html>
